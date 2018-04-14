@@ -1,0 +1,112 @@
+.footer{
+//    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .gallery ,.info,.contact{
+        float: $float-left;
+    }
+    .gallery{
+        width: 100%;
+        @media #{$minSmall}{
+            width: 100%
+        }
+       @media #{$minMedium}{
+            width: 50%
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 23px;
+            img{
+                @media #{$minSmall}{
+                float: $float-left;
+                }
+                width: 120px;
+                height: 120px;
+            }
+            .text{
+                float: $float-left;
+                @media #{$minSmall}{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: calc(100% - 140px);
+                }
+                h4{
+                    color: $redColor;
+                    margin:2px 0 0px;
+                    font-size: 17px;
+                }
+                p{
+                    color: #888;
+                    margin-top: 8px;
+                    line-height: 1.9;
+                }
+            }
+        }
+    }
+    .info{
+        @media #{$minSmall}{
+            width: 50%
+        }
+       @media #{$minMedium}{
+            width: 50%
+        }
+        ul{
+            color: #888;
+            line-height: 1.8;
+            li{
+                span{
+                    color: $redColor;
+                }
+            }
+        }
+        h4{
+            color: #888;
+            font-weight: bold;
+            margin-bottom: 0px;
+        
+        }
+        p{
+            color: #888;
+            margin-top: 8px;
+        }
+    }
+    .contact{
+        @media #{$minSmall}{
+            width: 50%
+        }
+       @media #{$minMedium}{
+            width: 50%
+        }
+        input[type="text"],input[type="email"],
+        textarea{
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #c9c9c9;
+        }
+        textarea{
+            height: 140px;
+        }
+    }
+    .section-title{
+        color: #777;
+        font-weight: normal;
+    }
+    /* CopyRight */
+    .copyright{
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        overflow: hidden;
+        color: #888;
+        margin-top: 20px;
+        .text,.auther{
+            float: $float-left;
+            width: 50%;
+        }
+        .auther{
+            text-align: $text-right;
+        }
+
+    }
+}
